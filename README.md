@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Wine Statistics App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React app calculates and displays class-wise statistical measures for the Wine dataset.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Setup](#setup)
+- [Usage](#usage)
+- [File Structure](#file-structure)
+- [Screenshots](#screenshots)
+- [Notes](#notes)
 
-### `yarn start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This React app performs statistical analysis on the Wine dataset. It calculates class-wise mean, median, and mode for "Flavanoids" and "Gamma". The calculated values are displayed in tabular format.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Setup
 
-### `yarn test`
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd wine-stats
+   yarn install
+   yarn start
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The app will open in your default web browser. You should see tables displaying the statistical measures for Flavanoids and Gamma.
 
-### `yarn build`
+## File Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- src/
+  - App.js: Main component integrating FlavanoidsStatsTable and GammaStatsTable.
+  - data/wineData.js: File containing the Wine dataset.
+  - components/
+    - lavanoidsStatsTable.js: React component for displaying Flavanoids statistics.
+    - GammaStatsTable.js: React component for displaying Gamma statistics.
+  - services/utils.js: Utility functions for calculating statistics.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screenshots
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Flavanoids Stats Table
 
-### `yarn eject`
+Gamma Stats Table
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Notes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The statistical measures (mean, median, mode) are rounded off to 3 decimal places.
+Ensure that you have Node.js and Yarn installed on your machine.
