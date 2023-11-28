@@ -19,7 +19,7 @@ This React app performs statistical analysis on the Wine dataset. It calculates 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/itsankitjha/manufac-wine-statistics
    cd wine-stats
    yarn install
    yarn start
@@ -41,7 +41,11 @@ The app will open in your default web browser. You should see tables displaying 
 
 Flavanoids Stats Table
 
+![Alt text](image.png)
+
 Gamma Stats Table
+
+![Alt text](image-1.png)
 
 ## Notes
 
